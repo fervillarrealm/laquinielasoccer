@@ -1,0 +1,48 @@
+#banner {
+    padding: 15px 30px;
+    background: #ECECEC;
+    box-shadow: 0 -20px 30px -30px rgba(0,0,0,.75) inset;
+    -moz-box-shadow: 0 -20px 30px -30px rgba(0,0,0,.75) inset;
+    -webkit-box-shadow: 0 -20px 30px -30px rgba(0,0,0,.75) 
+}
+
+#banner div {
+    display: inline-block; 
+    padding: 0 12px;
+}
+
+#banner img {
+    width: 48px;
+    height: 48px;
+    transition: all .3s ease-in;
+    margin-top:auto;
+    margin-bottom:auto;
+}
+
+#banner img:hover {
+    width: 52px;
+    height: 52px;
+}
+
+.navbar-default {
+    background: #072146;
+    margin-bottom: 0;
+    color: #fff;
+}
+
+.navbar-default 
+.navbar-nav>li>a:focus, 
+.navbar-default .navbar-nav>li>a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.navbar-default .navbar-brand:hover {
+    color: rgb(206, 206, 206);;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.open>a {
+    background: #00549c !important;
+    color: #fff;
+}

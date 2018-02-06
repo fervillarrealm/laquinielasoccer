@@ -1,0 +1,14 @@
+
+div.equipos {
+    margin: 10px 0; 
+}
+
+div.equipos img {
+    display: inline-block;
+    width: 24px;
+}
+
+div.equipos span {
+    font-size: 14px;
+    vertical-align: middle;
+}

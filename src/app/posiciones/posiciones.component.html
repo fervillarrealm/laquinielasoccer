@@ -1,0 +1,44 @@
+<div class="col-md-8 col-md-offset-2">
+    <div class="panel panel-default">
+      <div class="panel-body panel-shadow">
+      <h2>Posiciones</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <h4>Club</h4>
+        </div>
+        <div class="col-md-1">
+          <span>PJ</span>
+        </div>
+        <div class="col-md-1">
+          <span>G</span>
+        </div>
+        <div class="col-md-1">
+          <span>E</span>
+        </div>
+        <div class="col-md-1">
+          <span>P</span>
+        </div>
+        <div class="col-md-1">
+          <span>GF</span>
+        </div>
+        <div class="col-md-1">
+          <span>GC</span>
+        </div>
+        <div class="col-md-1">
+          <span>DG</span>
+        </div>
+        <div class="col-md-1">
+          <span>PTS</span>
+        </div>
+      </div>
+      <div class="row" style="border-bottom: 1px solid #ccc;" *ngFor="let equipo of equipos">
+        <div class="col-md-4">
+          <div class="equipos">
+              <img src="{{ equipo.imgUrl }}" alt="{{ equipo.nomEquipo }}">
+              <span>{{ equipo.nomEquipo }}</span>
+          </div>        
+        </div>    
+      </div>
+    </div>
+  </div>
+</div>

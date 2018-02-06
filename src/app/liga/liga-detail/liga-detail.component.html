@@ -1,0 +1,14 @@
+<div class="container">
+  <h1>{{ liga.nomLiga }}</h1>
+  <dl class="list">
+    <dt>Temporada</dt>
+    <dd>{{ liga.temporada }}</dd>
+  </dl>
+  <div class="row">
+    <div class="col-md-12">
+      <a [routerLink]="['/liga-edit', liga._id]" class="btn btn-success">EDIT</a>
+      <button class="btn btn-danger" type="button" (click)="deleteLiga(liga._id)">DELETE</button>
+      <a [routerLink]="['/ligas']" class="btn btn-default">RETURN</a>
+    </div>
+  </div>
+</div>

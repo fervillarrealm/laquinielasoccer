@@ -1,0 +1,47 @@
+html, body {
+    min-height: 100% !important;
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+}
+
+
+#dashboard {
+    background: #ECECEC;
+    z-index: -90000;
+    min-height: 100%;
+    padding: 35px 0;
+    color: #072146;
+}
+
+#wrapper {
+    color: #ccc;
+    opacity: .7;
+    padding: 35px 0;
+    background: url('http://territorioinformativo.com/wp-content/uploads/2016/07/liga_mx_TerritorioInformativo.jpg');
+    background-size: cover;
+    background-repeat: repeat;
+    z-index: -90000;
+    min-height: 100%;
+}
+
+.panel-liga {
+    background-color: #181938;
+    border-color: #828282;
+}
+
+.panel-shadow {
+    -moz-box-shadow: 0 2px 2px rgba(0,0,0,.3);
+    -webkit-box-shadow: 0 2px 2px rgba(0,0,0,.3);
+    box-shadow: 0 2px 2px rgba(0,0,0,.3);
+
+    -webkit-box-shadow: 1px 9px 5px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 9px 5px -4px rgba(0,0,0,0.75);
+    box-shadow: 1px 9px 5px -4px rgba(0,0,0,0.75);
+}
+
+.centerDiv {
+    margin: 0 auto;
+    width:80%;
+}
+
+
