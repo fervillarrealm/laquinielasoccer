@@ -1,0 +1,34 @@
+form {
+    margin-top: 20px;
+}
+
+form h5 {
+    color: #fff !important;
+}
+
+#partidos {
+    text-align: center !important;
+}
+
+.local img,
+.visitante img {
+    display: inline-block;
+    width: 34px;
+}
+
+.local {
+    text-align: right;
+}
+
+.visitante {
+    text-align: left;
+}
+
+.row.row-header {
+    padding-bottom: 10px;
+}
+
+.row.row-header span {
+    font-weight: 700;
+    padding: 10px;
+}

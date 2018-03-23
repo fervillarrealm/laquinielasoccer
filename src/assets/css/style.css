@@ -2,8 +2,8 @@ html, body {
     min-height: 100% !important;
     height: 100%;
     font-family: 'Lato', sans-serif;
+    font-size: 13px;
 }
-
 
 #dashboard {
     background: #ECECEC;
@@ -44,4 +44,14 @@ html, body {
     width:80%;
 }
 
+.panel-quiniela {
+    background-color: #072146 !important;
+    margin-bottom: 0;
+    color: #fff;
+    background: #072146; /* Old browsers */
+background: -moz-linear-gradient(top, #072146 91%, #1e5799 100%, #2989d8 100%, #1e5799 101%, #207cca 101%) !important; /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #072146 91%,#1e5799 100%,#2989d8 100%,#1e5799 101%,#207cca 101%) !important; /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #072146 91%,#1e5799 100%,#2989d8 100%,#1e5799 101%,#207cca 101%) !important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#072146', endColorstr='#207cca',GradientType=0 ) !important;
+}
 

@@ -13,6 +13,7 @@ import { LigaEditComponent } from './liga/liga-edit/liga-edit.component';
 
 import { PosicionesComponent } from './posiciones/posiciones.component';
 import { JornadaComponent } from './jornada/jornada.component';
+import { PronosticoComponent } from './pronostico/pronostico.component';
 import { LoginComponent } from './auth/login/login.component';
 import { AuthComponent } from './auth/auth.component';
 import { RegisterComponent } from './auth/register/register.component';
@@ -27,6 +28,8 @@ const authRoutes: Routes = [
 const homeRoutes: Routes = [
   { path: '', redirectTo: 'posiciones', pathMatch: 'full' },
   { path: 'posiciones', component: PosicionesComponent, data: { title: 'Posiciones' } },
+  { path: 'jornadas', component: JornadaComponent, data: { title: 'jornadas' } },
+  { path: 'pronostico', component: PronosticoComponent, data: { title: 'pronostico' } }
 ];
 
 const appRoutes: Routes = [

@@ -1,0 +1,31 @@
+
+<div class="col-md-8 col-md-offset-2">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4>Tu pronóstico</h4>
+    </div>
+    <div class="panel-body panel-shadow">
+        <div class="row">
+          <div class="col-md-4">
+            <label for="cmbJornada">Jornada</label>
+            <select class="form-control" [ngModel]="claJornada" (ngModelChange)="onChange($event)" name="cmbJornada">
+                <option [value]="jornada._id" *ngFor="let jornada of jornadas">{{jornada.nomJornada}}</option>
+                <option value="">Seleccionar...</option>
+            </select>
+          </div><!-- col-md-4 -->
+        </div><!-- row -->
+        <div class="row">
+          <app-partido-form></app-partido-form>
+        </div><!-- row -->
+    </div><!--panel-body -->
+    <div class="panel-footer">
+        <div class="row">
+          <div class="col-md-12">
+            <button class="btn btn-primary pull-right">
+              Guardar
+            </button>
+          </div><!-- col-md-12 -->
+        </div><!-- row -->
+      </div><!-- panel-footer -->
+  </div><!-- panel-default-->
+</div><!-- col-md-8-->

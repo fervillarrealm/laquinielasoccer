@@ -46,9 +46,13 @@ var url = "https://www.google.com.mx/async/lr_lg_fp?ei=BQFZWuaIBIjujwS3x4nwDA&yv
         
         var jornadas = JSON.parse(data)[1][3][1];
         //Lista Partidos
-        //console.log(JSON.parse(jornadas[4][3][0][5][1])[1]);
-        var partido = JSON.parse(jornadas[4][3][0][5][1])[1][4][1][12];
-        console.log(partido);
+        //var partido = JSON.parse(jornadas[4][3][0][5][1])[4];
+        var partido2 = JSON.parse(jornadas[4][3][0][5][1])[1][4][1][12];
+        console.log(partido2);
+        
+        
+
+        /*
         fs.writeFile("test.txt", partido, function(err) {
             if(err) {
                 return console.log(err);
@@ -56,12 +60,13 @@ var url = "https://www.google.com.mx/async/lr_lg_fp?ei=BQFZWuaIBIjujwS3x4nwDA&yv
         
             console.log("The file was saved!");
         }); 
-
-        return;
+        */
+        
         //  Jornadas
         
         for(x=4; x<jornadas.length-3; x++){
-            console.log(jornadas[x][3][0][5][1]);
+            var tem = JSON.parse(jornadas[x][3][0][5][1])[1][4][1];
+            console.log(tem);
         }
 
         return;

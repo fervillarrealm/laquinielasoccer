@@ -1,44 +1,81 @@
 <div class="col-md-8 col-md-offset-2">
     <div class="panel panel-default">
-      <div class="panel-body panel-shadow">
+      <div id="posiciones" class="panel-body panel-shadow">
       <h2>Posiciones</h2>
-      <div class="row">
+      <div class="row row-header">
         <div class="col-md-4">
           <h4>Club</h4>
         </div>
-        <div class="col-md-1">
-          <span>PJ</span>
-        </div>
-        <div class="col-md-1">
-          <span>G</span>
-        </div>
-        <div class="col-md-1">
-          <span>E</span>
-        </div>
-        <div class="col-md-1">
-          <span>P</span>
-        </div>
-        <div class="col-md-1">
-          <span>GF</span>
-        </div>
-        <div class="col-md-1">
-          <span>GC</span>
-        </div>
-        <div class="col-md-1">
-          <span>DG</span>
-        </div>
-        <div class="col-md-1">
+        <div class="col-md-1 text-center">
           <span>PTS</span>
         </div>
-      </div>
-      <div class="row" style="border-bottom: 1px solid #ccc;" *ngFor="let equipo of equipos">
+        <div class="col-md-1 text-center">
+          <span>JJ</span>
+        </div>
+        <div class="col-md-1 text-center">
+          <span>DG</span>
+        </div>
+        <div class="col-md-1 text-center">
+          <span>JG</span>
+        </div>
+        <div class="col-md-1 text-center">
+          <span>JE</span>
+        </div>
+        <div class="col-md-1 text-center">
+          <span>JP</span>
+        </div>
+        <div class="col-md-1 text-center">
+          <span>GF</span>
+        </div>
+        <div class="col-md-1 text-center">
+          <span>GC</span>
+        </div>
+      </div><!-- row -->
+      <div class="row" *ngFor="let equipo of equipos">
         <div class="col-md-4">
           <div class="equipos">
               <img src="{{ equipo.imgUrl }}" alt="{{ equipo.nomEquipo }}">
               <span>{{ equipo.nomEquipo }}</span>
-          </div>        
-        </div>    
-      </div>
+          </div>
+        </div>
+          <div class="col-md-1 text-center">
+            <span>{{ equipo.puntos }}</span>
+          </div>
+          <div class="col-md-1 text-center">
+              <span>{{ equipo.jj }}</span>
+          </div>
+          <div class="col-md-1 text-center">
+            <span>{{ equipo.dg }}</span>
+          </div>
+          <div class="col-md-1 text-center">
+            <span>{{ equipo.jg }}</span>
+          </div>
+          <div class="col-md-1 text-center">
+            <span>{{ equipo.je }}</span>
+          </div>
+          <div class="col-md-1 text-center">
+            <span>{{ equipo.jp }}</span>
+          </div>
+          <div class="col-md-1 text-center">
+            <span>{{ equipo.gf }}</span>
+          </div>
+          <div class="col-md-1 text-center">
+            <span>{{ equipo.gc }}</span>
+          </div>
+      </div><!-- row -->
+    </div><!-- panel-body -->
+    <div class="panel-footer">
+        <ul>
+            <li><span><strong>Pos :</strong> Posición</span></li>
+            <li><span><strong>PTS :</strong> Puntos</span></li>
+            <li><span><strong>JJ :</strong> Juegos jugados</span></li>
+            <li><span><strong>DG :</strong> Diferencia de goles</span></li>
+            <li><span><strong>JG :</strong> Juegos ganados</span></li>
+            <li><span><strong>JE :</strong> Juegos empatados</span></li>
+            <li><span><strong>JP :</strong> Juegos perdidos</span></li>
+            <li><span><strong>GF :</strong> Goles a favor</span></li>
+            <li><span><strong>GC :</strong> Goles en contra</span></li>
+          </ul>
     </div>
-  </div>
-</div>
+  </div><!-- panel-default -->
+</div><!-- col-md-8 -->

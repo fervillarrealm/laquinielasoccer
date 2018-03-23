@@ -1,0 +1,59 @@
+<form novalidate [formGroup]="partidoForm">
+    <div class="col-md-12">
+        <div id="partidos" class="panel panel-default" *ngFor="let partidoList of partidos">
+            <div class="panel-heading panel-quiniela text-center">
+              <h5>{{ partidoList[0].fechaPartido.toUpperCase() }}</h5>
+            </div>
+            <div class="panel-body panel-shadow">
+                <div class="row row-header">
+                  <div class="col-md-2"><span>Hora</span></div>
+                  <div class="col-md-3"><span>Local</span></div>
+                  <div class="col-md-1"><span>Marcador</span></div>
+                  <div class="col-md-1"><span>Marcador</span></div>
+                  <div class="col-md-3"><span>Visitante</span></div>
+                  <div class="col-md-2"><span>Lugar</span></div>
+                </div>
+                <div class="row" *ngFor="let partido of partidoList">
+                  <div class="col-md-2">
+                      <p>{{ partido.horaPartido }} - {{ partido.finalizado }}</p>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="local">
+                      <span>
+                          {{ partido.equipoLocal.nomEquipo }}
+                      </span>
+                      <img src="{{ partido.equipoLocal.imgUrl }}" alt="{{ partido.equipoLocal.nomEquipo }}">
+                    </div>
+                  </div>
+                  <div class="col-md-1">
+                    <span *ngIf="partido.finalizado">
+                        {{ partido.resultadoLocal }}
+                    </span>
+                    <div *ngIf="!partido.finalizado" class="form-group">
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-md-1">
+                      <span *ngIf="partido.finalizado">
+                        {{ partido.resultadoVisitante }}
+                      </span>
+                      <div *ngIf="!partido.finalizado" class="form-group">
+                        <input type="text" class="form-control">
+                      </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="visitante">
+                        <img src="{{ partido.equipoVisitante.imgUrl }}" alt="{{ partido.equipoVisitante.nomEquipo }}">
+                        <span>
+                            {{ partido.equipoVisitante.nomEquipo }}
+                        </span>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                      <p>{{ partido.lugarPartido }}</p>
+                  </div>
+                </div><!-- row -->
+            </div><!-- panel-body -->
+        </div><!-- panel-panel-default -->
+    </div><!-- col-md-12 -->
+  </form>

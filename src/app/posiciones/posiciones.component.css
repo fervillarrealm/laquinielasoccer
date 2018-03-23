@@ -1,14 +1,40 @@
 
+.row-header {
+    font-weight: 700;
+    font-size: 22px;
+}
+
+div#posiciones h2 {
+    font-weight: 700;
+    font-size: 22px;
+    text-align: center;
+}
+
+div#posiciones .row {
+    border-bottom: 1px solid #ccc;
+}
+
 div.equipos {
     margin: 10px 0; 
 }
 
 div.equipos img {
     display: inline-block;
-    width: 24px;
+    width: 28px;
 }
 
 div.equipos span {
     font-size: 14px;
     vertical-align: middle;
+}
+
+div#posiciones .row .col-md-1.text-center {
+    padding: 14px;
+}
+
+ul > li {
+    display: inline-block;
+    margin-right: 10px;
+    zoom:1;
+    *display:inline;
 }

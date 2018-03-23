@@ -8,7 +8,7 @@
 
 #banner div {
     display: inline-block; 
-    padding: 0 12px;
+    padding: 0 11px;
 }
 
 #banner img {
@@ -17,11 +17,6 @@
     transition: all .3s ease-in;
     margin-top:auto;
     margin-bottom:auto;
-}
-
-#banner img:hover {
-    width: 52px;
-    height: 52px;
 }
 
 .navbar-default {
@@ -45,4 +40,8 @@
 .navbar-default .navbar-nav>.open>a {
     background: #00549c !important;
     color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #fff !important;
 }

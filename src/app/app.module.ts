@@ -1,6 +1,7 @@
+import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -25,8 +26,8 @@ import { AuthComponent } from './auth/auth.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { LigaListComponent } from './liga/liga-list/liga-list.component';
 import { HomeComponent } from './home/home.component';
-
-
+import { PronosticoComponent } from './pronostico/pronostico.component';
+import { PartidoFormComponent } from './partido-form/partido-form.component';
 
 @NgModule({
   declarations: [
@@ -40,30 +41,27 @@ import { HomeComponent } from './home/home.component';
     LigaDetailComponent,
     LigaCreateComponent,
     LigaEditComponent,
-
     PosicionesComponent,
-
     JornadaComponent,
-
     LoginComponent,
-
     AuthComponent,
-
     RegisterComponent,
-
-
     LigaListComponent,
-
-
-    HomeComponent
+    HomeComponent,
+    PronosticoComponent,
+    PartidoFormComponent
   ],
   imports: [
+    CommonModule,
     BrowserModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpClientModule,
     RouterModule.forRoot(routes, { enableTracing: true })
   ],
-  providers: [],
+  providers: [
+
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

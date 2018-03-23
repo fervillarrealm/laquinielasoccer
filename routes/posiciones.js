@@ -5,11 +5,9 @@ var https = require('https');
 var fs = require('fs');
 var Equipo = require('../models/Equipo');
 
-
-
-/* GET ALL BOOKS */
+/* GET ALL EQUIPOS */
 router.get('/', function(req, res, next) {
-  Equipo.find(function (err, equipos) {
+  Equipo.find({}).sort({'puntos': 'descending'}).exec(function (err, equipos) {
     if (err) return next(err);
     res.json(equipos);
   });
