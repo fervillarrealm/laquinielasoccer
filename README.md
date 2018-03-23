@@ -7,4 +7,5 @@ _Requested by coworkers._
 * [Angular CLI](https://github.com/angular/angular-cli)
 * [MongoDB](https://www.mongodb.com/)
 
-![Login Page](src/assets/screen01.png?raw=true "Login Page")
+![Login Page](https://github.com/fervillarrealm/laquinielasoccer/tree/master/src/assets/img/screen01.png)
+[[https://github.com/fervillarrealm/laquinielasoccer/blob/master/src/assets/screen01.png|alt=LoginPage]]
