@@ -8,10 +8,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { routes } from './app.routes';
 
 import { AppComponent } from './app.component';
-import { BookComponent } from './book/book.component';
-import { BookDetailComponent } from './book-detail/book-detail.component';
-import { BookCreateComponent } from './book-create/book-create.component';
-import { BookEditComponent } from './book-edit/book-edit.component';
 
 import { LigaComponent } from './liga/liga.component';
 import { LigaDetailComponent } from './liga/liga-detail/liga-detail.component';
@@ -32,10 +28,6 @@ import { PartidoFormComponent } from './partido-form/partido-form.component';
 @NgModule({
   declarations: [
     AppComponent,
-    BookComponent,
-    BookDetailComponent,
-    BookCreateComponent,
-    BookEditComponent,
 
     LigaComponent,
     LigaDetailComponent,

@@ -1,10 +1,5 @@
 import { Routes, RouterModule } from '@angular/router';
 
-import { BookComponent } from './book/book.component';
-import { BookDetailComponent } from './book-detail/book-detail.component';
-import { BookCreateComponent } from './book-create/book-create.component';
-import { BookEditComponent } from './book-edit/book-edit.component';
-
 import { LigaComponent } from './liga/liga.component';
 import { LigaListComponent } from './liga/liga-list/liga-list.component';
 import { LigaDetailComponent } from './liga/liga-detail/liga-detail.component';
@@ -33,15 +28,11 @@ const homeRoutes: Routes = [
 ];
 
 const appRoutes: Routes = [
-  { path: '', redirectTo: 'books', pathMatch: 'full' },
+  { path: '', redirectTo: 'auth/login', pathMatch: 'full' },
   { path: 'auth', component: AuthComponent, data: { title: 'Auth' }, children: authRoutes },
   { path: 'home', component: HomeComponent, data: { title: 'home' }, children: homeRoutes },
 
   { path: 'liga', component: LigaComponent, data: { title: 'Ligas' } },
-  { path: 'books', component: BookComponent, data: { title: 'Books' } },
-  { path: 'book-details/:id', component: BookDetailComponent, data: { title: 'Book Details' } },
-  { path: 'book-create', component: BookCreateComponent, data: { title: 'Create Book' } },
-  { path: 'book-edit/:id', component: BookEditComponent, data: { title: 'Edit Book' } },
 
   { path: 'liga-list', component: LigaListComponent, data: { title: 'Ligas' } },
   { path: 'liga-details/:id', component: LigaDetailComponent, data: { title: 'Detalle de Liga' } },

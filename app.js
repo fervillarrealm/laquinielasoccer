@@ -6,7 +6,6 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 mongoose.Promise = require('bluebird');
 
-var book = require('./routes/book');
 var usuario = require('./routes/usuario');
 var posiciones = require('./routes/posiciones');
 var jornada = require('./routes/jornada');
@@ -31,7 +30,6 @@ app.use('/home/pronostico', express.static(path.join(__dirname, 'dist')));
 app.use('/home/jornadas', express.static(path.join(__dirname, 'dist')));
 
 app.use('/books', express.static(path.join(__dirname, 'dist')));
-app.use('/book', book);
 app.use('/usuario', usuario);
 app.use('/posicion', posiciones);
 app.use('/jornada', jornada);
