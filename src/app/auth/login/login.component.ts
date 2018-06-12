@@ -14,9 +14,13 @@ export class LoginComponent implements OnInit {
   constructor(private http: HttpClient, private router: Router) { }
 
   ngOnInit() {
+    this.http.get('/usuario').subscribe(data => {
+      console.log(data);
+    });
   }
 
   signIn() {
+
     this.http.post('/usuario/signin', this.usuario)
       .subscribe(data => {
 

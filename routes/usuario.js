@@ -36,7 +36,7 @@ router.post('/', function(req, res, next) {
 });
 
 /* SAVE */
-router.post('/signIn', function(req, res, next) {  
+router.post('/signin', function(req, res, next) {  
   
   Usuario.findOne( { email: req.body.email } , function (err, usuario) {
     if (err) {
