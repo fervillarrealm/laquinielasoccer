@@ -2,6 +2,7 @@
   "name": "la-quiniela-soccer",
   "version": "0.0.0",
   "license": "MIT",
+  "author": "Fernando Villarreal",
   "scripts": {
     "ng": "ng",
     "start": "ng build && node ./bin/www",
